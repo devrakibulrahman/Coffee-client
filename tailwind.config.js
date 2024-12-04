@@ -6,6 +6,9 @@ export default {
   ],
   theme: {
     extend: {
+      backgroundImage:{
+        headerImg: 'url(/15.jpg)'
+      },
       fontFamily: {
         'raleway': ["Raleway", "sans-serif"],
         'rancho': ["Rancho", "cursive"],
