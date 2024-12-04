@@ -6,6 +6,10 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        'raleway': ["Raleway", "sans-serif"],
+        'rancho': ["Rancho", "cursive"],
+      },
       fontSize:{
         'heading-xs': ['1.5rem', { lineHeight: '2rem' }], // Small screens
         'heading-sm': ['2rem', { lineHeight: '2.5rem' }], // Medium screens
