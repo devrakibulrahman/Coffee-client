@@ -10,6 +10,7 @@ export default {
         headerImg: 'url(/15.jpg)',
         footerImg: 'url(/13.jpg)',
         subFooterImg: 'url(/24.jpg)',
+        banner: 'url(/3.png)',
       },
       fontFamily: {
         'raleway': ["Raleway", "sans-serif"],
