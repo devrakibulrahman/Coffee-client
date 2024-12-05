@@ -11,6 +11,7 @@ export default {
         footerImg: 'url(/13.jpg)',
         subFooterImg: 'url(/24.jpg)',
         banner: 'url(/3.png)',
+        addCofBg: 'url(/11.png)', 
       },
       fontFamily: {
         'raleway': ["Raleway", "sans-serif"],
