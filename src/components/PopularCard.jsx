@@ -1,7 +1,10 @@
 import { FaEye, FaPen } from "react-icons/fa";
 import { MdDelete } from "react-icons/md";
+import { useNavigate } from "react-router-dom";
 
 const PopularCard = () => {
+    const navigate = useNavigate();
+
     return (
         <>
             <div className="w-full min-h-[300px] bg-[#F5F4F1] rounded-[10px] p-[30px] flex items-center gap-x-[36px]">
@@ -15,13 +18,13 @@ const PopularCard = () => {
                         <h1 className="font-raleway text-xl font-medium text-[#1B1A1A]">Price: <span className="text-[#5C5B5B] font-normal">800$</span></h1>
                     </div>
                     <div className="w-auto space-y-4">
-                        <div className="w-10 h-10 bg-[#D2B48C] rounded-[5px] flex items-center justify-center">
+                        <div className="w-10 h-10 bg-[#D2B48C] rounded-[5px] flex items-center justify-center cursor-pointer">
                             <FaEye className="text-lg text-white"></FaEye>
                         </div>
-                        <div className="w-10 h-10 bg-[#3C393B] rounded-[5px] flex items-center justify-center">
+                        <div onClick={() => navigate('/update coffee')} className="w-10 h-10 bg-[#3C393B] rounded-[5px] flex items-center justify-center cursor-pointer">
                             <FaPen className="text-lg text-white"></FaPen>
                         </div>
-                        <div className="w-10 h-10 bg-[#EA4744] rounded-[5px] flex items-center justify-center">
+                        <div className="w-10 h-10 bg-[#EA4744] rounded-[5px] flex items-center justify-center cursor-pointer">
                             <MdDelete className="text-lg text-white"></MdDelete>
                         </div>
                     </div>

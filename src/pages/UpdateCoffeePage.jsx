@@ -3,7 +3,7 @@ import { IoMdArrowBack } from "react-icons/io";
 
 const UpdateCoffeePage = () => {
     const navigate = useNavigate();
-    
+
     return (
         <>
             <div className="w-full min-h-[calc(95vh-92px)] bg-addCofBg bg-cover bg-center bg-no-repeat pb-[120px]">
@@ -15,7 +15,7 @@ const UpdateCoffeePage = () => {
                     </div>
                     <div className="w-full min-h-[575px] bg-[#F4F3F0] px-[120px] py-[70px]">
                         <div className="w-full flex items-center justify-center flex-col">
-                            <h1 className="font-rancho text-[45px] leading-[56px] font-normal text-[#374151]">Add New Coffee</h1>
+                            <h1 className="font-rancho text-[45px] leading-[56px] font-normal text-[#374151]">Update Existing Coffee Details</h1>
                             <div className="w-full max-w-[930px] mt-8 text-center">
                                 <p className="font-raleway text-lg leading-[30px] font-normal text-[#1B1A1AB3]">It is a long established fact that a reader will be distraceted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using Content here.</p>
                             </div>
@@ -58,7 +58,7 @@ const UpdateCoffeePage = () => {
                                         <input type="text" name="url" placeholder="Enter photo url" autoComplete="off" className="p-[11px] h-[48px] font-raleway text-base leading-[26px] font-normal text-[#1B1A1ACC] placeholder:text-[#1B1A1A99] rounded-[5px] outline-none" />
                                     </div>
                                     <div className="w-full">
-                                        <button className="w-full h-[50px] bg-[#D2B48C] border-2 border-[#331A15] rounded-[5px] font-rancho text-[24px] leading-[30px] font-normal text-[#331A15]">Add Coffee</button>
+                                        <button className="w-full h-[50px] bg-[#D2B48C] border-2 border-[#331A15] rounded-[5px] font-rancho text-[24px] leading-[30px] font-normal text-[#331A15]">Update Coffee Details</button>
                                     </div>
                                 </div>
                             </form>
