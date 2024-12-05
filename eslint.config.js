@@ -33,6 +33,8 @@ export default [
         'warn',
         { allowConstantExport: true },
       ],
+      "react/prop-types": "off",
+      "react/jsx-props-no-spreading": "off"
     },
   },
 ]
