@@ -18,7 +18,7 @@ const PopularCard = () => {
                         <h1 className="font-raleway text-xl font-medium text-[#1B1A1A]">Price: <span className="text-[#5C5B5B] font-normal">800$</span></h1>
                     </div>
                     <div className="w-auto space-y-4">
-                        <div className="w-10 h-10 bg-[#D2B48C] rounded-[5px] flex items-center justify-center cursor-pointer">
+                        <div onClick={() => navigate('/coffee details')} className="w-10 h-10 bg-[#D2B48C] rounded-[5px] flex items-center justify-center cursor-pointer">
                             <FaEye className="text-lg text-white"></FaEye>
                         </div>
                         <div onClick={() => navigate('/update coffee')} className="w-10 h-10 bg-[#3C393B] rounded-[5px] flex items-center justify-center cursor-pointer">
