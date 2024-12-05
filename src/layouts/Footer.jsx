@@ -33,7 +33,7 @@ const Footer = () => {
                                 </div>
                             </div>
                             <div className='w-full mt-8'>
-                                <div className='w-full'>
+                                <div className='w-full mb-8'>
                                     <h1 className='font-rancho text-[45px] leading-[56px] font-normal text-[#331A15]'>Get in Touch</h1>
                                 </div>
                                 <div className='w-full flex flex-col items-center gap-y-4'>
@@ -65,7 +65,7 @@ const Footer = () => {
                             </div>
                         </div>
                         <div className='w-full max-w-[500px]'>
-                            <div className='w-full'>
+                            <div className='w-full mb-8'>
                                 <h1 className='font-rancho text-[45px] leading-[56px] font-normal text-[#331A15]'>Connect with Us</h1>
                             </div>
                             <div className='w-full'>
