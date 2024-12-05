@@ -1,8 +1,10 @@
+import { PiCoffee } from "react-icons/pi";
 import DetailsCard from "../components/DetailsCard";
 import Cup from '../assets/icons/1.png';
 import Badge from '../assets/icons/2.png';
 import Coffee from '../assets/icons/3.png';
 import Pot from '../assets/icons/4.png';
+import PopularCard from "../components/PopularCard";
 
 const HomePage = () => {
     return (
@@ -33,6 +35,29 @@ const HomePage = () => {
                         </div>
                     </div>
                 </div>
+                {/* popular products */}
+                <div className="w-full min-h-[300px]">
+                    <div className="container mx-auto px-4">
+                        <div className="w-full pt-[120px]">
+                            <div className="w-full flex flex-col items-center justify-center">
+                                <h3 className="font-raleway text-[20px] leading-[26px] font-normal text-[#1B1A1A] mb-2">--- Sip & Savor ---</h3>
+                                <h1 className="font-rancho text-[55px] leading-[68px] font-normal text-[#331A15]">Our Popular Products</h1>
+                                <div className="mt-4">
+                                    <button className="flex items-center justify-center gap-x-[10px] px-[22px] h-[48px] font-rancho text-2xl leading-[30px] font-normal text-white bg-[#E3B577] border-2 border-[#331A15] rounded-[5px] transition ease-out duration-200 hover:bg-transparent hover:text-[#331A15]">Add Coffee <PiCoffee className="text-[#331A15]"></PiCoffee></button>
+                                </div>
+                            </div>
+                            <div className="w-full min-h-[300px] grid grid-cols-1 md:grid-cols-2 gap-6 mt-[48px]">
+                                <PopularCard></PopularCard>
+                                <PopularCard></PopularCard>
+                                <PopularCard></PopularCard>
+                                <PopularCard></PopularCard>
+                                <PopularCard></PopularCard>
+                                <PopularCard></PopularCard>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
             </div>
         </>
     );
