@@ -7,7 +7,9 @@ export default {
   theme: {
     extend: {
       backgroundImage:{
-        headerImg: 'url(/15.jpg)'
+        headerImg: 'url(/15.jpg)',
+        footerImg: 'url(/13.jpg)',
+        subFooterImg: 'url(/24.jpg)',
       },
       fontFamily: {
         'raleway': ["Raleway", "sans-serif"],
