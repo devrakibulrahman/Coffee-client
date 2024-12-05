@@ -1,12 +1,17 @@
 import { PiCoffee } from "react-icons/pi";
+import { useContext } from "react";
+import { CardContext } from "../contexts/CardProvider";
 import DetailsCard from "../components/DetailsCard";
 import Cup from '../assets/icons/1.png';
 import Badge from '../assets/icons/2.png';
 import Coffee from '../assets/icons/3.png';
 import Pot from '../assets/icons/4.png';
 import PopularCard from "../components/PopularCard";
+import ImgCard from "../components/ImgCard";
 
 const HomePage = () => {
+    const {card} = useContext(CardContext);
+    console.log(card)
     return (
         <>
             <div className="w-full">
@@ -57,7 +62,24 @@ const HomePage = () => {
                         </div>
                     </div>
                 </div>
-                
+                {/* follow us */}
+                <div className="w-full min-h-[300px]">
+                    <div className="container mx-auto px-4">
+                        <div className="w-full pt-[120px] pb-[110px]">
+                            <div className="w-full">
+                                <div className="w-full flex flex-col items-center justify-center">
+                                    <h3 className="font-raleway text-xl leading-[26px] font-normal text-[#1B1A1A] mb-2">Follow Us Now</h3>
+                                    <h1 className="font-rancho text-[55px] leading-[68px] font-normal text-[#331A15]">Follow on Instagram</h1>
+                                </div>
+                            </div>
+                            <div className="w-full grid grid-cols-1 gap-6 mt-[48px] md:grid-cols-2 lg:grid-cols-4">
+                                {
+                                    card.map((card, idx) => <ImgCard key={idx} card={card}></ImgCard>)
+                                }
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </>
     );
